@@ -5,6 +5,7 @@ do
 	echo "what to do?"
 	echo "1 -> enter docker"
 	echo "2 -> so some shell practice"
+	echo "3 -> push to github"
 
 	read -p "enter your choice: " choice
 	case $choice in
@@ -30,6 +31,13 @@ do
 				touch shell.sh
 				vim shell.sh
 			fi
+			break
+			;;
+		3)
+			git pull origin main
+			git add .
+			git commit -m "auto commit"
+			git push origin main
 			break
 			;;
 		*)
