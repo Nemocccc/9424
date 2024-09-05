@@ -1,0 +1,1 @@
+cat prints the content of files, and echo > overwrite the content of files

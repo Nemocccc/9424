@@ -1,0 +1,6 @@
+/anything/exercise/cmake/t1/CMakeFiles/hello.dir
+/anything/exercise/cmake/t1/CMakeFiles/edit_cache.dir
+/anything/exercise/cmake/t1/CMakeFiles/rebuild_cache.dir
+/anything/exercise/cmake/t1/math/CMakeFiles/MathFunctions.dir
+/anything/exercise/cmake/t1/math/CMakeFiles/edit_cache.dir
+/anything/exercise/cmake/t1/math/CMakeFiles/rebuild_cache.dir

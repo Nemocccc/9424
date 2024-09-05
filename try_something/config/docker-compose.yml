@@ -1,0 +1,43 @@
+services: 
+  # basic-image: ubuntu:22.04
+  anything_ubuntu22basic_image:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: nemocccc/ubuntu:latest
+    container_name: anything_ubuntu22basic_image
+    init: true
+    network_mode: host
+    ipc: host
+    restart: always
+    privileged: true
+    tty: true
+    shm_size: 5120M
+    # runtime: nvidia
+    # environment: 
+    #   NVIDIA_VISIBLE_DEVICES: all
+    volumes:
+      - ../:/exec
+      - /DATACENTER1/zixing.liao/try_something:/anything
+      - /DATACENTER1/zixing.liao/leetcode:/leetcode
+
+
+  
+
+  # # basic-image: instream:co_latest
+  # anything_instreambasic_image:
+  #   image: instream:co_latest
+  #   container_name: anything_instreambasic_image
+  #   init: true
+  #   network_mode: host
+  #   ipc: host
+  #   restart: always
+  #   privileged: true
+  #   tty: true
+  #   shm_size: 5120M
+  #   runtime: nvidia
+  #   environment: 
+  #     NVIDIA_VISIBLE_DEVICES: all
+  #   volumes:
+  #     - ../:/exec
+  #     - /DATACENTER1/zixing.liao/try_something:/anything
